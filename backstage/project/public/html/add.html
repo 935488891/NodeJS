@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>添加信息</title>
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/list.css">
+    <script src="../javascripts/jquery-3.2.1.js"></script>
+    <script src="../javascripts/add.js"></script>
+</head>
+
+<body>
+    <div class="leftMeun" id="leftMeun">
+        <div class="meun-title">后台管理</div>
+        <div class="meun-item" id="all">查找信息</div>
+        <div class="meun-item meun-item-active" href="#char" id="add">添加信息</div>
+        <div class="meun-item" href="#user" id="upd">修改信息</div>
+        <div class="meun-item" href="#chan" id="del">删除信息</div>
+    </div>
+    <div id="rightContent">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="sour">
+                <div class="check-div form-inline">
+                    <img src="" alt="" id="img_path" style="width: 50px; height: 50px;">
+                    <div style="float:right; margin-right:50%; transform: translateX(50%) ">
+                        <img src="../images/icon_chara_grey.png" alt="">
+                        <button class="btn btn-yellow btn-xs" id="btn_se">添加资源</button>
+                    </div>
+                </div>
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>年龄</th>
+                            <th>地址</th>
+                            <th>职业</th>
+                            <th>联系方式</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content">
+                        <tr class="guid_0">
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number" class="tel"><span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="width: 100%; padding-left: 10px; margin-top: 30px;">
+                    <span>选择添加信数量<input type="number" id="btn_1" value="1" style="margin-left: 10px; width: 50px"></span>
+                    <button id="btn_2">生成信息表格</button>
+                    <button style="float: right; margin-right: 100px" id="btn_3">添加信息</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

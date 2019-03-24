@@ -1,0 +1,138 @@
+@charset "utf-8";
+body {
+	min-width: 100%;
+	height: auto;
+}
+#wrap {
+	min-width: 100%;
+	position: absolute;
+	background: #eff3f6 bottom;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.leftMeun {
+	position: absolute;
+	box-sizing: border-box;
+	width: 200px;
+	height: 100%;
+	background: #4d5e70 bottom;
+}
+.leftMeun >div {
+	padding-left: 20px;
+}
+#rightContent {
+	box-sizing: border-box;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 200px;
+	overflow-y: overlay;
+	overflow-x: hidden;
+	clear: both;
+	color: #717592;
+	min-width: 100%;
+	min-height: 500px;
+}
+/*左侧菜单栏*/
+
+#logoDiv {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 70px;
+	background-color: #354457;
+	font-size: 17px;
+	color: #fff;
+	vertical-align: bottom;
+}
+#logo {
+	height: 30px;
+	padding-right: 5px;
+}
+#logoDiv span {
+	vertical-align: bottom;
+}
+#personInfor {
+	padding: 10px 5px 10px;
+	margin: 0 5px;
+	color: #b3bcc5;
+	border-bottom: 1px solid #354457;
+	overflow-x: hidden;
+	padding-left: 20px;
+}
+#personInfor p {
+	font-size: 12px;
+	margin-left: -5px;
+}
+#personInfor a {
+	color: #B3BCC5;
+	text-decoration: underline;
+}
+#userName {
+	font-size: 15p;
+	padding: 0;
+	margin: 0;
+}
+.line-div {
+	color: #F00;
+	height: 5px;
+}
+.meun dl {
+	padding: 0 10px;
+}
+.meun-title {
+	color: #828e9a;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.meun-item {
+	line-height: 40px;
+	height: 40px;
+	color: #aab1b7;
+	cursor: pointer;
+}
+.meun-item-active {
+	background-color: #3d4e60;
+	border-right: 4px solid #647f9d;
+	color: #fff;
+}
+/*右侧具体内容栏目*/
+
+.check-div {
+	height: 70px;
+	line-height: 70px;
+	*line-height: 60px;
+	background-color: #fff;
+	padding-left: 30px;
+	min-width: 824px;
+	box-sizing: border-box;
+}
+.check-div button {
+	font-size: 12px;
+	font-weight: bold;
+}
+.tab-pane {
+	color: #9095ab;
+}
+.tableHeader {
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #646987;
+	background-color: #e3e8ee;
+	padding: 0 30px;
+	text-align: left;
+}
+
+/*表格上部边框线*/
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+	vertical-align: middle ;
+	padding: 8px 15px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="左右结构项目，属于大人员的社交工具">
+    <meta name="keywords" content="左右结构项目 社交 占座 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>信息</title>
+    <script src="../javascripts/jquery-3.2.1.js"></script>
+    <script src="../javascripts/list.js"></script>
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/list.css">
+</head>
+
+<body>
+    <div class="leftMeun" id="leftMeun">
+        <div class="meun-title">后台管理</div>
+        <div class="meun-item meun-item-active" id="all">查找信息</div>
+        <div class="meun-item" href="#char" id="add">添加信息</div>
+        <div class="meun-item" href="#user" id="upd">修改信息</div>
+        <div class="meun-item" href="#chan" id="del">删除信息</div>
+    </div>
+    <div id="rightContent">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="sour">
+                <div class="check-div form-inline">
+                    <img src="" alt="" id="img_path" style="width: 50px; height: 50px;">
+                    <input type="file" name="abc" id="file" style="display: inline-block; line-height: 0;">
+                    <div style="float:right; margin-right:50%; transform: translateX(50%) ">
+                        <img src="../images/icon_chara_grey.png" alt="">
+                        <input type="text" placeholder="请输入要查找人的名字" id="name_1" style="width: 170px; height: 30px;">
+                        <button class="btn btn-yellow btn-xs" id="btn_se">查找</button>
+                    </div>
+                </div>
+                <div class="data-div">
+                    <div class="row tableHeader">
+                        <div class=" col-xs-2 ">
+                            编码
+                        </div>
+                        <div class=" col-xs-2">
+                            姓名
+                        </div>
+                        <div class=" col-xs-2">
+                            年龄
+                        </div>
+                        <div class=" col-xs-2">
+                            地址
+                        </div>
+                        <div class=" col-xs-2">
+                            职业
+                        </div>
+                        <div class=" col-xs-2">
+                            联系方式
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped ">
+                        <tbody class="content">
+                            <tr class="row">
+                                <td class=" col-xs-2 ">1,001</td>
+                                <td class=" col-xs-2 ">Lorem</td>
+                                <td class=" col-xs-2 ">ipsum</td>
+                                <td class=" col-xs-2 ">dolor</td>
+                                <td class=" col-xs-2 ">ipsum</td>
+                                <td class=" col-xs-2 ">dolor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

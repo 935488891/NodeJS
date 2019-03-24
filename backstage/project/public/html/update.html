@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>修改信息</title>
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/list.css">
+    <script src="../javascripts/jquery-3.2.1.js"></script>
+    <script src="../javascripts/update.js"></script>
+</head>
+
+<body>
+    <div class="leftMeun" id="leftMeun">
+        <div class="meun-title">后台管理</div>
+        <div class="meun-item " id="all">查找信息</div>
+        <div class="meun-item" href="#char" id="add">添加信息</div>
+        <div class="meun-item meun-item-active" href="#user" id="upd">修改信息</div>
+        <div class="meun-item" href="#chan" id="del">删除信息</div>
+    </div>
+    <div id="rightContent">
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="sour">
+                <div class="check-div form-inline">
+                    <img src="" alt="" id="img_path" style="width: 50px; height: 50px;">
+                    <div style="float:right; margin-right:50%; transform: translateX(50%) ">
+                        <img src="../images/icon_chara_grey.png" alt="">
+                        <input type="text" placeholder="请输入要修改人的名字" id="name_1" style="width: 170px; height: 30px;">
+                        <button class="btn btn-yellow btn-xs" id="btn_se">查找</button>
+                    </div>
+                </div>
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>姓名</th>
+                            <th>年龄</th>
+                            <th>地址</th>
+                            <th>职业</th>
+                            <th>联系方式</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content">
+                    </tbody>
+                </table>
+                <div style="width: 100%; padding-left: 10px; margin-top: 30px;">
+                    <button style="float: right; margin-right: 100px" id="btn_3">修改信息</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
